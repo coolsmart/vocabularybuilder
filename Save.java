@@ -247,7 +247,7 @@ public class save extends AppCompatActivity {
         keyboard.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), 0);
         WebView myWebView = (WebView) findViewById(R.id.id_webview);
         myWebView.setVisibility(View.VISIBLE);
-        myWebView.setWebViewClient(new WebViewClient()); //link web tarayicida degil programda acilacak
+        myWebView.setWebViewClient(new WebViewClient()); 
         String link="https://tr.langenscheidt.com/almanca-turkce/"+vocabulary.getText().toString();
         myWebView.loadUrl(link);
 
@@ -257,7 +257,7 @@ public class save extends AppCompatActivity {
         keyboard.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), 0);
         WebView myWebView = (WebView) findViewById(R.id.id_webview);
         myWebView.setVisibility(View.VISIBLE);
-        myWebView.setWebViewClient(new WebViewClient()); //link web tarayicida degil programda acilacak
+        myWebView.setWebViewClient(new WebViewClient()); 
         String link="https://www.linguee.com/english-german/search?source=german&query="+vocabulary.getText().toString();
         myWebView.loadUrl(link);
 
@@ -268,7 +268,7 @@ public class save extends AppCompatActivity {
 
         WebView myWebView = (WebView) findViewById(R.id.id_webview);
         myWebView.setVisibility(View.VISIBLE);
-        myWebView.setWebViewClient(new WebViewClient()); //link web tarayicida degil programda acilacak
+        myWebView.setWebViewClient(new WebViewClient()); 
         String link="https://www.google.com.tr/search?q="+vocabulary.getText().toString()+"&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj5n4_f9frXAhUBPBQKHbkgBbEQ_AUICigB&biw=1600&bih=790";
 
         myWebView.loadUrl(link);
