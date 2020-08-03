@@ -70,7 +70,7 @@ public class vocabularycard extends AppCompatActivity {
     	    memorisednumber=mycursor.getCount();
           mycursor = vocabularyDB.rawQuery("SELECT * FROM Vocabulary WHERE ismemorised=0 ORDER BY id DESC", null);
     	    mycursor.moveToFirst();
-          lastrecordid = parseInt(mycursor.getString(0)); //id ye gore azalan siraladigimiz icin ilk kayit aslinda son id oluyor
+          lastrecordid = parseInt(mycursor.getString(0)); 
           numberofrecords = mycursor.getCount();
           kayitlarigetir();}
         catch(Throwable e) {   
@@ -90,7 +90,7 @@ public class vocabularycard extends AppCompatActivity {
         });
 
         showmemorised.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) { //ezberlenenler dahil goster
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) { 
 
 
                 if (isChecked) {
